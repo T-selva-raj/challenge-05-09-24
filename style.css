@@ -1,0 +1,75 @@
+@font-face {
+    font-family: "myfont";
+    src: url(./assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+body {
+    background-color: #141414;
+    width: 100vw;
+    height: 100vh;
+    color: #fff;
+    font-family: 'myfont';
+    overflow: hidden;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 300px;
+    background-color: #212121;
+    height: 75%;
+    border-radius: 15px;
+    padding: 20px 10px;
+}
+
+.name-container {
+    text-align: center;
+}
+
+.heading {
+    flex-direction: column;
+    height: 45%;
+}
+
+.heading img {
+    width: 35%;
+    height: 45%;
+    border-radius: 50%;
+}
+
+button {
+    background-color: #333333;
+    font-family: "myfont";
+    color: #fff;
+    width: 80%;
+    height: 12%;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    font-weight: bold;
+}
+
+
+
+.button-container {
+    flex-direction: column;
+    justify-content: space-around;
+    height: 55%;
+}
+
+button:hover {
+    background-color: greenyellow;
+    color: black;
+    cursor: pointer;
+    transition: .5s;
+}
+
+@media (max-width: 600px) {
+    .card {
+        width: 70%;
+    }
+}
